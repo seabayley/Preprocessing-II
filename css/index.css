@@ -326,7 +326,7 @@ img {
   font-size: 2rem;
   font-style: bold;
   border-radius: 10px;
-  background-color: teal;
+  background-color: #17A2B8;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
@@ -334,5 +334,5 @@ img {
   }
 }
 .home .content-pick .destination .btn:hover {
-  background-color: #004d4d;
+  background-color: #117a8b;
 }
