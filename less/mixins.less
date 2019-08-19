@@ -1,1 +1,34 @@
-// Mixins in here
+// Button Styler switch states.
+.button-styler(@color; @radius; dark) {
+    border-radius: @radius;
+    background-color: @color;
+    &:hover {
+        background-color: darken(@color, 10%);
+    }
+}
+
+.button-styler(@color; @radius; light) {
+    border-radius: @radius;
+    background-color: @color;
+    &:hover {
+        background-color: lighten(@color, 10%);
+    }
+}
+
+.button-styler(@color; @radius) {
+    border-radius: @radius;
+    background-color: @color;
+}
+
+.create-button() {
+    width: 80%;
+    text-align: center;
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    font-size: 2rem;
+    font-style: bold;
+    @media @mobile {
+        width: 100%;
+    }
+}
